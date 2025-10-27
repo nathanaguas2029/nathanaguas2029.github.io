@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+body {
+  width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Nunito", sans-serif;
+  margin-top: 0px;
+  background-color: #f6f6f6;
+}
+.topnav {
+  background-color: #e5f5ff;
+  display: flex;
+  justify-content: end;
+}
+.topnav a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+header {
+  background-color: #004eaa;
+  display: flex;
+  justify-content: space-between;
+}
+header div a {
+  color: white;
+  text-decoration: none;
+  padding: 24px;
+}
+header div img {
+  height: 24px;
+  padding: 24px;
+}
+header div {
+  display: flex;
+  align-items: center;
+}
+.secondnav {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+.secondnav a {
+  color: #004eaa;
+  text-decoration: none;
+  padding: 12px;
+  font-weight: bold;
+}
+.secondnav a:hover {
+  border-bottom: 4px #fdb913 solid;
+}
+.maincontent {
+  display: flex;
+}
+.toptext {
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+.bottomtext {
+  margin-bottom: 60px;
+}
+.leftcontent h1 {
+  font-weight: 500;
+  font-size: 42pt;
+}
+.leftcontent a {
+  color: white;
+  background-color: #004eaa;
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 12px;
+}
+.grid h1 {
+  font-weight: 625;
+  font-size: 30pt;
+}
+.gridcont {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 24px;
+}
+.gridcont div {
+  background-color: white;
+  border-radius: 12px;
+  padding: 5px 12px;
+}
+footer {
+  background-color: #004eaa;
+  margin-top: 24px;
+}
+footer nav {
+  display: flex;
+  justify-content: center;
+}
+footer nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: bold;
+}
+footer p {
+  font-size: 10pt;
+  color: white;
+  text-align: center;
+  padding-bottom: 24px;
+}
+@media (max-width: 1140px) {
+  body {
+    width: auto;
+  }
+  .gridcont {
+    grid-template-columns: auto auto;
+    margin: 0px 12px;
+  }
+  .maincontent {
+    margin: 0px 12px;
+  }
+}
+@media (max-width: 768px) {
+  .gridcont {
+    grid-template-columns: auto;
+    margin: 0px 12px;
+  }
+  .maincontent {
+    flex-direction: column-reverse;
+    margin: 0px 12px;
+  }
+  .righthead {
+    display: none;
+  }
+  img {
+    width: 100%;
+  }
+  .secondnav {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    justify-content: space-between;
+  }
+}
+@media(max-width: 430px) {
+  .secondnav {
+    grid-template-columns: auto
+  }
+  .lefthead a:last-of-type {
+    display: none;
+  }
+}
+
